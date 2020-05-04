@@ -1,0 +1,120 @@
+.row{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.col{
+    padding:0;
+    margin:15px;
+    flex: 1 0 30%;
+    max-width: 30%;
+}
+.btn {
+    cursor: pointer;
+}
+
+.card-body{
+    background-color: #f3f3f3;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.card-img-top{
+    max-height: 70%;
+    max-width: 70%;
+    margin: 20px auto 0;
+}
+
+.card-btn{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.card__btn__price__delete{
+    float: right;
+}
+
+.card__btn__addKg{
+    display: flex;
+    align-items: center;
+}
+.fruit__kg{
+    margin: 0;
+    padding: 6px 0px;
+}
+.fa-plus{
+    border: white;
+    padding: 12px 12px;
+    background-color:  #f3f3f3;
+}
+
+.fruit__container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 35px 0 15px;
+}
+
+.fruit__container_header_bth__add__fruit{
+    margin: 10px 0 10px 0;
+}
+
+.fruit__container_header_title{
+    margin: 10px 0 10px 0;
+    font-size: 2em;
+}
+
+
+input{
+    border: 1px solid #a4a4a4;
+    border-radius: 3px;
+
+}
+
+@media screen and (max-width: 1200px){
+    .fruit__container_header{
+        margin:0 20px 0 15px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .fruit__container_header{
+        margin:0 20px 0 15px;
+    }
+    .col{
+        margin:10px;
+    }
+    .card-btn{
+        float: none;
+
+    }
+}
+
+@media screen and (max-width: 767px){
+    .col{
+        flex: 1 0 50%;
+        max-width: 45%;
+    }
+    .fruit__container_header_title{
+        font-size: 1.5em;
+    }
+    .card-title{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .col{
+        flex: 1 0 100%;
+        max-width: 70%;
+        margin: 10px auto;
+    }
+
+}
+
+@media screen and (max-width: 450px){
+    .modal-window{
+        width:200px;
+    }
+}
